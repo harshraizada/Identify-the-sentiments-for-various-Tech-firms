@@ -3,9 +3,10 @@ A look into the sentiment around Apple, based on tweets containing #AAPL, @apple
 All Tweets are classified into three labels
 1) Positive - 5;
 2) Neutral - 3;
-3) Negative - 1.
+3) Negative - 1
+4) Not relevant-2
 
 Data fields
 id - the id of twitter;
-sentiment - sentiment of tweet;
-text - tweet text.
+sentiment_type - sentiment type of tweet;
+tweet - tweet text.
