@@ -12,3 +12,4 @@ sentiment_type - sentiment type of tweet;
 tweet - tweet text.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/harshraizada/Apple-Computers-Twitter-sentiment-analysis/master)
 
+
