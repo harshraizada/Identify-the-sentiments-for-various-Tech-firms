@@ -3,7 +3,7 @@ Sentiment analysis remains one of the key problems that has seen extensive appli
 
 All Tweets are classified into two labels
 1) Positive - 0;
-2) Neutral - 1;
+2) Negative - 1;
 
 Data fields
 id - the id of twitter;
