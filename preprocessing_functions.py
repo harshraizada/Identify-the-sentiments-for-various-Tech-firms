@@ -2,6 +2,11 @@ import warnings
 warnings.filterwarnings('ignore')
 # Import necessary packages
 
+import re # for regular expressions 
+import nltk # for text manipulation 
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
 
 
 
