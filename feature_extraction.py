@@ -3,8 +3,9 @@
  from sklearn.model_selection import train_test_split
  from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
  
- # Before feature extraction splitting the data into train and test and then feature extraction
+ # Before feature extraction first splitting the data into train and test and then perform feature extraction
  
+ def traintest_split(X,y):
     """Split into training and test (hold-out) set"""
     # 80% of the input for training and 20% for training
     Xtrain, Xtest, ytrain, ytest = train_test_split(X,y, test_size = 0.2,random_state=42,shuffle= True,stratify=y)
