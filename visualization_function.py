@@ -5,7 +5,15 @@
  
  from wordcloud import WordCloud
  
-    def most_common_visual(input_column):
+  def tweet_length_dist(input_column):
+    """checking Distribution of length of the tweets or number of characters"""
+    tweet_length=input_column.str.len()
+    plt.hist(tweet_length, bins=20)
+    plt.title("Tweet Length")
+    plt.show()  
+  
+  
+  def most_common_visual(input_column):
         """Most common words in text"""
         words = ' '.join([t for t in input_column])
         wordcloud = WordCloud(width=800, height=500, random_state=21,max_words=100, background_color="white").generate(words)
