@@ -5,11 +5,11 @@
  
  from wordcloud import WordCloud
  
-  def tweet_length_dist(input_column):
-    """checking Distribution of length of the tweets or number of characters"""
-    tweet_length=input_column.str.len()
-    plt.hist(tweet_length, bins=20)
-    plt.title("Tweet Length")
+  def text_length_dist(input_column):
+    """Checking distribution of length of the text or number of characters"""
+    text_length=input_column.str.len()
+    plt.hist(text_length, bins=20)
+    plt.title("Text Length")
     plt.show()  
   
   
