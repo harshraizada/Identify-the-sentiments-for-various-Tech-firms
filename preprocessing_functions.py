@@ -73,7 +73,7 @@ def tokenization(input_column):
 
 def lemmatization(input_column):
     """Lemmatization of tokenized text"""
-    tweet_columns=input_column.apply(lambda x:[WordNetLemmatizer().lemmatize(i,'v') for i in x])
+    input_column=input_column.apply(lambda x:[WordNetLemmatizer().lemmatize(i,'v') for i in x])
     # Stitching of tokens back together
     for i in range(len(input_column)):
         input_column[i] = ' '.join(input_column[i])
