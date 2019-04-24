@@ -23,7 +23,7 @@
         plt.axis('off')
         plt.show()
     
-    def pos_visual(input_text_column,input_label_column):
+  def pos_visual(input_text_column,input_label_column):
         """Visualization of most common words in positive text"""
         positive_words =' '.join([t for t in input_text_column [input_label_column == 0]])
         wordcloud = WordCloud(width=800, height=500, random_state=21,max_words=100,max_font_size=110).generate(positive_words)
@@ -33,7 +33,7 @@
         plt.axis('off')
         plt.show()
     
-    def neg_visual(input_text_column,input_label_column):
+  def neg_visual(input_text_column,input_label_column):
         """Visualization of most common words in negative text"""
         negative_words =' '.join([t for t in input_text_column[input_label_column == 1]])
         wordcloud = WordCloud(width=800, height=500, random_state=21,max_words=100,max_font_size=110).generate(negative_words)
