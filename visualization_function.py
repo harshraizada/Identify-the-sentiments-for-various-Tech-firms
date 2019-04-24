@@ -1,32 +1,36 @@
  
  #Story generation and visualization from tweets
  
- def most_common_visual(tweet_columns):
-        """Most common words in all tweets"""
-        words = ' '.join([t for t in tweet_columns])
+ # Import necessary packages
+ 
+ from wordcloud import WordCloud
+ 
+    def most_common_visual(input_column):
+        """Most common words in text"""
+        words = ' '.join([t for t in input_column])
         wordcloud = WordCloud(width=800, height=500, random_state=21,max_words=100, background_color="white").generate(words)
         plt.figure(figsize=(10, 7))
         plt.imshow(wordcloud, interpolation="bilinear")
-        plt.title("Most common words in all tweets",fontdict={'fontsize':19,'fontweight':'bold'})
+        plt.title("Most common words in text",fontdict={'fontsize':19,'fontweight':'bold'})
         plt.axis('off')
         plt.show()
     
-    def pos_visual(tweet_columns,label_columns):
-        """Visualization of most common words in positive tweets"""
-        positive_words =' '.join([t for t in tweet_columns [label_columns == 0]])
+    def pos_visual(input_text_column,input_label_column):
+        """Visualization of most common words in positive text"""
+        positive_words =' '.join([t for t in input_text_column [input_label_column == 0]])
         wordcloud = WordCloud(width=800, height=500, random_state=21,max_words=100,max_font_size=110).generate(positive_words)
         plt.figure(figsize=(10, 7))
         plt.imshow(wordcloud, interpolation="bilinear")
-        plt.title("Most common words in positive tweets",fontdict={'fontsize':19,'fontweight':'bold'})
+        plt.title("Most common words in positive text",fontdict={'fontsize':19,'fontweight':'bold'})
         plt.axis('off')
         plt.show()
     
-    def neg_visual(tweet_columns,label_columns):
-        """Visualization of most common words in negative tweets"""
-        negative_words =' '.join([t for t in tweet_columns[label_columns == 1]])
+    def neg_visual(input_text_column,input_label_column):
+        """Visualization of most common words in negative text"""
+        negative_words =' '.join([t for t in input_text_column[input_label_column == 1]])
         wordcloud = WordCloud(width=800, height=500, random_state=21,max_words=100,max_font_size=110).generate(negative_words)
         plt.figure(figsize=(10, 7))
         plt.imshow(wordcloud, interpolation="bilinear")
-        plt.title("Most common words in negative tweets",fontdict={'fontsize':19,'fontweight':'bold'})
+        plt.title("Most common words in negative text",fontdict={'fontsize':19,'fontweight':'bold'})
         plt.axis('off')
         plt.show()
