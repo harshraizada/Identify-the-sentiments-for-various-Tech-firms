@@ -87,6 +87,7 @@ def preprocessing(input_column):
     input_column = remove_url(input_column)
     input_column = remove_handles(input_column)
     input_column = remove_apostrophes(input_column)
+    input_column = remove_sc(input_column)
     input_column = remove_stopwords(input_column)
     input_column = remove_shortwords(input_column)
     input_column = tokenization(input_column)
