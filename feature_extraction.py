@@ -11,7 +11,7 @@
     Xtrain, Xtest, ytrain, ytest = train_test_split(X,y, test_size = 0.2,random_state=42,shuffle= True,stratify=y)
     print (Xtrain.shape, ytrain.shape)
     print (Xtest.shape, ytest.shape)
-    return
+    return Xtrain, Xtest, ytrain, ytest
     
     
  def ohe_vectorization(X_train,X_test):
