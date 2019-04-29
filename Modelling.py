@@ -9,7 +9,7 @@ import time
 from sklearn.metrics import make_scorer
 from sklearn.metrics import accuracy_score,precision_score,recall_score,f1_score,classification_report,confusion_matrix
 
-def LRmodelling(X_train_vec,y_train,X_test_vec,y_test):
+def lr_modelling(X_train_vec,y_train,X_test_vec,y_test):
     """Applying Logistic Regression model"""
     #Instantiate a logistic classifier
     lr = LogisticRegression(random_state=42,class_weight='balanced')
