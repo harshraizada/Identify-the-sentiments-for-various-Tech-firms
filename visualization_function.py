@@ -10,7 +10,7 @@
     text_length=input_column.str.len()
     plt.hist(text_length, bins=20)
     plt.title("Text Length")
-    plt.show()  
+    plt.savefig("length_distribution.png")  
   
   
   def most_common_visual(input_column):
@@ -21,7 +21,7 @@
         plt.imshow(wordcloud, interpolation="bilinear")
         plt.title("Most common words in text",fontdict={'fontsize':19,'fontweight':'bold'})
         plt.axis('off')
-        plt.show()
+        plt.savefig("most_common.png") 
     
   def pos_visual(input_text_column,input_label_column):
         """Visualization of most common words in positive text"""
@@ -31,7 +31,7 @@
         plt.imshow(wordcloud, interpolation="bilinear")
         plt.title("Most common words in positive text",fontdict={'fontsize':19,'fontweight':'bold'})
         plt.axis('off')
-        plt.show()
+        plt.savefig("most_common_positive.png")
     
   def neg_visual(input_text_column,input_label_column):
         """Visualization of most common words in negative text"""
@@ -41,4 +41,4 @@
         plt.imshow(wordcloud, interpolation="bilinear")
         plt.title("Most common words in negative text",fontdict={'fontsize':19,'fontweight':'bold'})
         plt.axis('off')
-        plt.show()
+        plt.savefig("most_common_negative.png")
