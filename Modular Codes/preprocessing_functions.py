@@ -48,8 +48,10 @@ def remove_sc(input_column):
 
 def remove_stopwords(input_column):
     """Removing Stop Words from text"""
-    stop = stopwords.words('english')
-    return input_column.apply(lambda x: " ".join(x for x in x.split() if x not in stop))
+    s_words = stopwords.words('english')
+    not_stopwords = ['no', 'nor', 'not']
+    stop_words = set([word for word in s_words if word not in not_stopwords])
+    return input_column.apply(lambda x: " ".join(x for x in x.split() if x not in stop_words))
 
 
 def remove_shortwords(input_column):
