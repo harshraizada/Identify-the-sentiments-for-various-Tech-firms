@@ -9,6 +9,7 @@ Data fields
 id - the id of twitter;
 sentiment_type - sentiment type of tweet or tweet polarity;
 tweet - tweet text.
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/harshraizada/Apple-Computers-Twitter-sentiment-analysis/master)
+[![Binder](https://mybinder.org/v2/gh/harshraizada/Identify-the-sentiments-for-various-Tech-firms/blob/master/Jupyter%20file/Identify%20the%20sentiments%20for%20various%20tech%20firms%20final.ipynb/master
+)
 
 
